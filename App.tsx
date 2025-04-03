@@ -32,7 +32,7 @@ const App = () => {
     }
   };
 
-  const onDisplayNotification = async (remoteMessage) => {
+  const onDisplayNotification = async (remoteMessage: any) => {
     // Create a channel (required for Android)
       const channelId = await notifee.createChannel({
         id: 'default',
@@ -45,7 +45,7 @@ const App = () => {
       body: remoteMessage.notification.body,
       android: {
         channelId,
-        // smallIcon: 'name-of-a-small-icon', // optional, defaults to 'ic_launcher'.
+        // smallIcon: 'ic_launcher', // optional, defaults to 'ic_launcher'.
         // pressAction is needed if you want the notification to open the app when pressed
         pressAction: {
           id: 'default',
@@ -67,7 +67,7 @@ const App = () => {
       body: 'This is a test Foreground Notification.',
       android: {
         channelId,
-        // smallIcon: 'name-of-a-small-icon', // optional, defaults to 'ic_launcher'.
+        smallIcon: 'ic_launcher', // optional, defaults to 'ic_launcher'.
         // pressAction is needed if you want the notification to open the app when pressed
         pressAction: {
           id: 'default',
@@ -80,7 +80,7 @@ const App = () => {
   useEffect(() => {
     const unsubscribe = messaging().onMessage(async remoteMessage => {
       onDisplayNotification(remoteMessage);
-      Alert.alert('A new FCM message arrived!', JSON.stringify(remoteMessage));
+      // Alert.alert('A new FCM message arrived!', JSON.stringify(remoteMessage));
     });
 
     return unsubscribe;
