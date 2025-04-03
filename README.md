@@ -1,4 +1,4 @@
-# React Native (CLI)📱  - Push Notification🔔 - Firebase🔥
+# React Native - Firebase Push Notification🔔 - Android📱
 
 ### Follow the steps and instructions provided in this document <a target='_blank' href='https://docs.google.com/document/d/1EU2tJ0_xxoLV8Mu86CSzA811lyzDjZbL8_x_FfT8Zno/edit?usp=sharing'> Document </a>.
 ### Node JS Backend Server: <a href='https://github.com/Haider-Mukhtar/ReactNative-Push-Notification/tree/6f5ac775b5bc3145aec1058a282b02b5fdb2e447/push_notification_backend'> Backend Server </a>.
