@@ -1,5 +1,15 @@
-import {Alert, Button, Platform, StyleSheet, Text, View} from 'react-native';
+import {
+  Alert,
+  Button,
+  Image,
+  ImageSourcePropType,
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import React, {useEffect} from 'react';
+import Icon from './src/assets/icon.png';
 import {PermissionsAndroid} from 'react-native';
 import messaging from '@react-native-firebase/messaging';
 import notifee from '@notifee/react-native';
@@ -34,10 +44,10 @@ const App = () => {
 
   const onDisplayNotification = async (remoteMessage: any) => {
     // Create a channel (required for Android)
-      const channelId = await notifee.createChannel({
-        id: 'default',
-        name: 'Default Channel',
-      });
+    const channelId = await notifee.createChannel({
+      id: 'default',
+      name: 'Default Channel',
+    });
 
     // Display a notification
     await notifee.displayNotification({
@@ -52,14 +62,14 @@ const App = () => {
         },
       },
     });
-  }
+  };
 
   const onDisplayNotificationTest = async () => {
     // Create a channel (required for Android)
-      const channelId = await notifee.createChannel({
-        id: 'default',
-        name: 'Default Channel',
-      });
+    const channelId = await notifee.createChannel({
+      id: 'default',
+      name: 'Default Channel',
+    });
 
     // Display a notification
     await notifee.displayNotification({
@@ -74,7 +84,7 @@ const App = () => {
         },
       },
     });
-  }
+  };
 
   // Forground Notifications
   useEffect(() => {
@@ -105,16 +115,28 @@ const App = () => {
         justifyContent: 'center',
         backgroundColor: '#000000',
       }}>
-      <Text style={{color: '#FFFFFF', fontSize: 28, fontWeight:'bold'}}>
+      <Text style={{color: '#FFFFFF', fontSize: 28, fontWeight: 'bold'}}>
         Firebase Notifications
       </Text>
-      <Text style={{color: '#FFFFFF', fontSize: 28, marginBottom: 40, fontWeight:'bold'}}>
+      <Text
+        style={{
+          color: '#FFFFFF',
+          fontSize: 28,
+          fontWeight: 'bold',
+        }}>
         (Android)
       </Text>
-      <Text style={{color: '#FFFFFF', fontSize: 24,marginBottom: 10,}}>
+      <Image
+        style={{width: 150, height: 150, marginBottom: 40}}
+        source={Icon as ImageSourcePropType}
+        alt="Icon"
+      />
+      <Text style={{color: '#FFFFFF', fontSize: 24, marginBottom: 10}}>
         Foreground Notifications
       </Text>
-      <Button onPress={() => onDisplayNotificationTest()} title='Send Test Notifee Notification'></Button>
+      <Button
+        onPress={() => onDisplayNotificationTest()}
+        title="Send Test Notifee Notification"></Button>
     </View>
   );
 };
