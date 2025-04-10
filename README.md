@@ -3,6 +3,12 @@
 ### Follow the steps and instructions provided in this document <a target='_blank' href='https://docs.google.com/document/d/1EU2tJ0_xxoLV8Mu86CSzA811lyzDjZbL8_x_FfT8Zno/edit?usp=sharing'> Document </a>.
 ### Node JS Backend Server: <a href='https://github.com/Haider-Mukhtar/ReactNative-Push-Notification/tree/6f5ac775b5bc3145aec1058a282b02b5fdb2e447/push_notification_backend'> Backend Server </a>.
 
+## Demo
+
+
+https://github.com/user-attachments/assets/654643e9-e104-4638-8987-4eb7acb7ff22
+
+
 
 ## Tech Stack
 ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
