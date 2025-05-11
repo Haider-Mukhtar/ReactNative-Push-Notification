@@ -1,3 +1,5 @@
+![React Native (CLI) Firebase Push Notifications for Android](https://github.com/user-attachments/assets/97016865-ed43-46cc-b90f-d0fc45a84b6a)
+
 # React Native - Firebase Push Notification🔔 - Android📱
 
 ### Medium Blog: <a target='_blank' href='https://medium.com/@haidermukhtar/react-native-cli-firebase-push-notifications-for-android-4e8b1c36289a'> React Native (CLI) Firebase Push Notifications for Android </a>
